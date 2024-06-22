@@ -1,6 +1,6 @@
 class Solution:
     def intToRoman(self, num: int) -> str:
-        # Creating Dictionary for Lookup
+        
         num_map = {
             1: "I",
             5: "V",    4: "IV",
@@ -11,12 +11,12 @@ class Solution:
             1000: "M", 900: "CM",
         }
         
-        # Result Variable
+        
         r = ''
         
         
         for n in [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1]:
-            # If n in list then add the roman value to result variable
+            
             while n <= num:
                 r += num_map[n]
                 num-=n
